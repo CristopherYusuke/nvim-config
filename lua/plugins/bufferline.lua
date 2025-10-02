@@ -32,8 +32,7 @@ return {
         always_show_bufferline = true,
         show_tab_indicators = false,
         indicator = {
-          -- icon = '▎', -- this should be omitted if indicator style is not 'icon'
-          style = 'none', -- Options: 'icon', 'underline', 'none'
+          style = 'none', 
         },
         icon_pinned = '󰐃',
         minimum_padding = 1,
@@ -49,11 +48,6 @@ return {
           bold = true,
           italic = false,
         },
-        -- separator_selected = {},
-        -- tab_selected = {},
-        -- background = {},
-        -- indicator_selected = {},
-        -- fill = {},
       },
     }
   end,
