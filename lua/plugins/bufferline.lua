@@ -28,7 +28,7 @@ return {
 				show_close_icon = true,
 				persist_buffer_sort = true, -- whether or not custom sorted buffers should persist
 				separator_style = { "│", "│" }, -- | "thick" | "thin" | { 'any', 'any' },
-				enforce_regular_tabs = true,
+				--enforce_regular_tabs = true,
 				always_show_bufferline = true,
 				show_tab_indicators = false,
 				indicator = {
