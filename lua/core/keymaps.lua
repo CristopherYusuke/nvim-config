@@ -26,10 +26,10 @@ vim.keymap.set("n", "n", "nzzzv", opts)
 vim.keymap.set("n", "N", "nzzzv", opts)
 
 -- resize with arrows
-vim.keymap.set("n", "<Up>", ":resize -2<CR>", opts)
-vim.keymap.set("n", "<Down>", ":resize +2<CR>", opts)
-vim.keymap.set("n", "<Left>", ":vertical resize -2<CR>", opts)
-vim.keymap.set("n", "<Right>", ":vertical resize +2<CR>", opts)
+vim.keymap.set("n", "<A-Up>", ":resize -2<CR>", opts)
+vim.keymap.set("n", "<A-Down>", ":resize +2<CR>", opts)
+vim.keymap.set("n", "<A-Left>", ":vertical resize -2<CR>", opts)
+vim.keymap.set("n", "<A-Right>", ":vertical resize +2<CR>", opts)
 
 -- buffers
 vim.keymap.set("n", "<Tab>", ":bnext<CR>", opts)

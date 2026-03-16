@@ -17,7 +17,7 @@ return {
 		},
 		config = function(_, opts)
 			require("neo-tree").setup(opts)
-			vim.keymap.set("n", "<leader>e", ":Neotree toggle position=left<CR>", { noremap = true, silent = true })
+			vim.keymap.set("n", "<leader>e", ":Neotree toggle position=right<CR>", { noremap = true, silent = true })
 		end,
 	},
 	{
