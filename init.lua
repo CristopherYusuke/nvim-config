@@ -29,4 +29,5 @@ require("lazy").setup({
 	require("plugins.nvim-lint"),
 	require("plugins.surround"),
 	require("plugins.opencode"),
+	require("plugins.lazygit"),
 })
