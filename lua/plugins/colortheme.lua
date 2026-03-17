@@ -1,23 +1,15 @@
 return {
-	"Mofiqul/vscode.nvim",
+	"shaunsingh/nord.nvim",
 	lazy = false,
 	priority = 1000,
 	config = function()
-		vim.o.background = "dark"
-		local c = require("vscode.colors").get_colors()
-		require("vscode").setup({
-			italic_comments = true,
-			italic_inlayhints = true,
-			underline_links = true,
-			disable_nvimtree_bg = true,
-			terminal_colors = true,
-			color_overrides = {
-				vsclinenumber = "#ffffff",
-			},
-			group_overrides = {
-				cursor = { fg = c.vscdarkblue, bg = c.vsclightgreen, bold = true },
-			},
-		})
-		vim.cmd.colorscheme("vscode")
+		vim.g.nord_contrast = true
+		vim.g.nord_borders = true
+		vim.g.nord_disable_background = false
+		vim.g.nord_italic = true
+		vim.g.nord_uniform_diff_background = true
+		vim.g.nord_bold = true
+
+		require("nord").set()
 	end,
 }
