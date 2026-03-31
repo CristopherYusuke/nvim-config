@@ -26,16 +26,22 @@ vim.keymap.set("n", "n", "nzzzv", opts)
 vim.keymap.set("n", "N", "nzzzv", opts)
 
 -- resize with arrows
-vim.keymap.set("n", "<A-Up>", ":resize -2<CR>", opts)
-vim.keymap.set("n", "<A-Down>", ":resize +2<CR>", opts)
-vim.keymap.set("n", "<A-Left>", ":vertical resize -2<CR>", opts)
-vim.keymap.set("n", "<A-Right>", ":vertical resize +2<CR>", opts)
+vim.keymap.set("n", "<S-C-Up>", ":resize -2<CR>", opts)
+vim.keymap.set("n", "<S-C-Down>", ":resize +2<CR>", opts)
+vim.keymap.set("n", "<S-C-Left>", ":vertical resize -2<CR>", opts)
+vim.keymap.set("n", "<S-C-Right>", ":vertical resize +2<CR>", opts)
 
 -- buffers
 vim.keymap.set("n", "<Tab>", ":bnext<CR>", opts)
 vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>", opts)
 vim.keymap.set("n", "<leader>x", ":bdelete!<CR>", opts)
 vim.keymap.set("n", "<leader>b", "<cmd> enew <CR>", opts)
+
+-- window management
+vim.keymap.set("n", "<leader>v", "<C-w>v", opts)
+vim.keymap.set("n", "<leader>h", "<C-w>s", opts)
+vim.keymap.set("n", "<leader>se", "<C-w>=", opts)
+vim.keymap.set("n", "<leader>xs", ":close<CR>", opts)
 
 -- navigate splits
 vim.keymap.set("n", "<C-k>", ":wincmd k<CR>", opts)
@@ -58,7 +64,6 @@ vim.keymap.set("v", ">", ">gv", opts)
 
 -- keep last yanked when pasting
 vim.keymap.set("v", "p", '"_dP', opts)
-
 -- Diagnostic keymaps
 vim.keymap.set("n", "[d", function()
 	vim.diagnostic.jump({ count = -1, float = true })
