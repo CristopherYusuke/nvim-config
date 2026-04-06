@@ -14,7 +14,8 @@ end
 local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 require("lazy").setup({
-	require("plugins.neotree"),
+	-- require("plugins.neotree"),
+	require("plugins.mini-files"),
 	require("plugins.bufferline"),
 	require("plugins.colortheme"),
 	require("plugins.lualine"),
