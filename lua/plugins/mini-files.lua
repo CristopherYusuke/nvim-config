@@ -2,6 +2,10 @@ return {
 	{
 		"nvim-mini/mini.files",
 		version = "*",
+		windows = {
+			width_focus = 100,
+			width_nofocus = 25,
+		},
 		keys = {
 			{
 				-- Open the directory of the file currently being edited

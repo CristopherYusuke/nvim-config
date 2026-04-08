@@ -13,8 +13,10 @@ end
 
 local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
+
 require("lazy").setup({
 	-- require("plugins.neotree"),
+	require("plugins.noice"),
 	require("plugins.mini-files"),
 	require("plugins.bufferline"),
 	require("plugins.colortheme"),
@@ -30,6 +32,6 @@ require("lazy").setup({
 	require("plugins.misc"),
 	require("plugins.nvim-lint"),
 	require("plugins.surround"),
-	require("plugins.opencode"),
+	-- require("plugins.pencode"),
 	require("plugins.lazygit"),
 })
