@@ -17,7 +17,7 @@ rtp:prepend(lazypath)
 require("lazy").setup({
 	-- require("plugins.neotree"),
 	require("plugins.noice"),
-	require("plugins.mini-files"),
+	-- require("plugins.mini-files"),
 	require("plugins.bufferline"),
 	require("plugins.colortheme"),
 	require("plugins.lualine"),
@@ -32,6 +32,7 @@ require("lazy").setup({
 	require("plugins.misc"),
 	require("plugins.nvim-lint"),
 	require("plugins.surround"),
+	require("plugins.oil"),
 	-- require("plugins.pencode"),
 	require("plugins.lazygit"),
 })
