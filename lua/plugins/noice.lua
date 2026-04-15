@@ -28,5 +28,10 @@ return {
 				lsp_doc_border = false, -- add a border to hover docs and signature help
 			},
 		})
+
+		require("notify").setup({
+			background_colour = "#000000", -- Default to black, but will be overwritten by NONE
+			render = "minimal", -- Optional: makes notifications more compact
+		})
 	end,
 }
