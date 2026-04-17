@@ -5,6 +5,7 @@
 vim.hl.priorities.semantic_tokens = 95 -- Or any number lower than 100, treesitter's priority level
 -- Appearance of diagnostics
 vim.diagnostic.config({
+	severity_sort = true,
 	virtual_text = {
 		prefix = "●",
 		-- Add a custom format function to show error codes
